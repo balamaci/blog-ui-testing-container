@@ -1,0 +1,14 @@
+tomcat:
+  image: balamaci/tomcat7
+  volumes:
+    - ./out:/opt/tomcat/logs
+
+uitests:
+  image: balamaci/ui-tests
+  volumes:
+    - ./blog-docker-immutable:/usr/src/app
+    - /home/sbalamaci/.m2:/root/.m2
+  links:
+    - tomcat
+  ports:
+    - 8080:8080
