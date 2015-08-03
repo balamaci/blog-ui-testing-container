@@ -1,4 +1,4 @@
-FROM        balamaci/mvn3-jkd8
+FROM        balamaci/mvn3-jdk8
 
 VOLUME      ["/usr/src/app"]
 
