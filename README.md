@@ -25,7 +25,7 @@ or pulled from a repository.
 ## Running the tests
 After all the prerequisites have been met you can run:
 ```  
-  # docker-compose mvn -DflagUpdateReferenceScreenshots=true clean verify  
+  # docker-compose run uitests mvn -DflagUpdateReferenceScreenshots=true clean verify  
 ```
 
 stopping the container and cleaning up
