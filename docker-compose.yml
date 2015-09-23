@@ -1,5 +1,5 @@
 tomcat:
-  image: balamaci/tomcat7
+  image: balamaci/tomcat7-jdk8
   volumes:
     - ./out:/opt/tomcat/logs
 
