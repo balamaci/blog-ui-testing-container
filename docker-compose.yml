@@ -7,7 +7,7 @@ uitests:
   image: balamaci/ui-tests
   volumes:
     - .:/usr/src/app
-    - ~.m2:/root/.m2
+    - ~/.m2:/root/.m2
   links:
     - tomcat
   ports:
